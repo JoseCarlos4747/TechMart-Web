@@ -34,7 +34,7 @@ body {
     transform: translateY(-2px);
 }
 
-.ayuda-container {
+.ayuaaa {
     max-width: 900px;
     margin: 40px auto;
     padding: 30px;
@@ -106,7 +106,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .ayuda-container {
+    .ayuaaa {
         margin: 20px;
         padding: 20px;
     }
