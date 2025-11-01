@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C2E2FA;
+}
+
+#encabezado {
+    background-color: #132440;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+#encabezado h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.botonvolver {
+    color: white;
+    text-decoration: none;
+    background-color: #10408c;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.botonvolver:hover {
+    background-color: #325b9c;
+    transform: translateY(-2px);
+}
+
+.ayuaaa {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    animation: aparecer 0.5s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #132440;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.seccion {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-left: 5px solid #10408c;
+    background-color: #C2E2FA;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.seccion:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.seccion h2 {
+    color: #10408c;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.seccion p {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.seccion ul, .seccion ol {
+    color: #333;
+    line-height: 2;
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+.seccion li {
+    margin-bottom: 10px;
+}
+
+.icono {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .ayuaaa {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    #encabezado {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/*===================================*/
+/* Animación de entrada para cada sección con retraso */
+.seccion:nth-child(1) {
+    animation: aparecer 0.6s ease-out 0.1s backwards;
+}
+
+.seccion:nth-child(2) {
+    animation: aparecer 0.6s ease-out 0.3s backwards;
+}
+
+.seccion:nth-child(3) {
+    animation: aparecer 0.6s ease-out 0.5s backwards;
+}
+
+.seccion:nth-child(4) {
+    animation: aparecer 0.6s ease-out 0.7s backwards;
+}
+
+.seccion:nth-child(5) {
+    animation: aparecer 0.6s ease-out 0.9s backwards;
+}
+
+/* Animación de pulso para iconos */
+.icono {
+    display: inline-block;
+    animation: pulsoIcono 2s ease-in-out infinite;
+}
+
+@keyframes pulsoIcono {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Efecto hover mejorado en listas */
+.seccion li {
+    transition: all 0.3s ease;
+    padding-left: 5px;
+}
+
+.seccion li:hover {
+    transform: translateX(10px);
+    color: #10408c;
+    font-weight: bold;
+}
+
+/* Imagen decorativa en secciones */
+.seccion-imagen {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+}
+
+.seccion-imagen:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Contenedor de video */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+/* Animación gradiente en encabezado */
+#encabezado {
+    background: linear-gradient(135deg, #132440 0%, #10408c 100%);
+    animation: deslizarAbajo 0.6s ease-out;
+}
+
+@keyframes deslizarAbajo {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Efecto de brillo en botón volver */
+.botonvolver {
+    position: relative;
+    overflow: hidden;
+}
+
+.botonvolver::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: all 0.5s;
+}
+
+.botonvolver:hover::before {
+    left: 100%;
+}
+
+/* Animación de fade-in para el título */
+h1 {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Badge animado para destacar información importante */
+.badge-importante {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: rebote 1s ease-in-out infinite;
+    margin-left: 10px;
+}
+
+@keyframes rebote {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+
+/*===================================*/
+/* Contenedor de video responsivo */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+    animation: aparecer 0.8s ease-out;
+}
+
+.video-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(16, 64, 140, 0.4);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    display: block;
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+    .video-container iframe {
+        height: 300px;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+    .video-container iframe {
+        height: 250px;
+    }
+}
