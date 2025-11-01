@@ -119,3 +119,25 @@ input:focus {
 }
 
 /*=====================*/
+
+/* Animación para mensajes de error */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.ERROR.mostrar {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Animación para input con error */
+input.error {
+    border-color: #d32f2f;
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Transición suave para mensajes */
+.ERROR {
+    transition: all 0.3s ease;
+}
