@@ -5,9 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechMart</title>
     <link rel="icon" type="image/png" href="Imagen1.png">
-    <link rel="stylesheet" href="productos.css">
-    <script src="productos.js"></script>
+    <link rel="stylesheet" href="../css/productos.css">
+    <script src="../javascript/productos.js"></script>
 </head>
+<!-- Script para manejar Login/Logout -->
+<script>
+    // Función que se ejecuta cuando carga la página
+    window.onload = function() {
+        // Revisar si el usuario está logueado
+        const estaLogueado = localStorage.getItem('usuarioLogueado') === 'true';
+        const nombreUsuario = localStorage.getItem('nombreUsuario') || 'Usuario';
+        
+        // Buscar los botones en el navbar
+        const loginLink = document.querySelector('#e2 ul li:first-child a');
+        const logoutLink = document.querySelector('#e2 ul li:last-child a');
+        
+        if (estaLogueado) {
+            // Si está logueado: ocultar "Log In" y mostrar "Log Out"
+            loginLink.parentElement.style.display = 'none';
+            logoutLink.textContent = '👋 Cerrar Sesión (' + nombreUsuario + ')';
+            logoutLink.href = '#';
+            
+            // Cuando haga clic en "Cerrar Sesión"
+            logoutLink.onclick = function(e) {
+                e.preventDefault();
+                if (confirm('¿Seguro que quieres cerrar sesión?')) {
+                    // Borrar datos del localStorage
+                    localStorage.removeItem('usuarioLogueado');
+                    localStorage.removeItem('emailUsuario');
+                    localStorage.removeItem('nombreUsuario');
+                    // Recargar página
+                    location.reload();
+                }
+            };
+        } else {
+            // Si NO está logueado: mostrar "Log In" y ocultar "Log Out"
+            loginLink.href = 'login.html';
+            logoutLink.parentElement.style.display = 'none';
+        }
+    };
+</script>
 <body>
     <div id="encabezado">
         <h3>TechMart S.A.C.</h3>
@@ -17,13 +54,13 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="">Carrito Compras</a></li>
                 <li><a href="">Pagos</a></li>
-                <li><a href="">Ayuda</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li> <!-- ⬅️ CAMBIA ESTO -->
             </ul>
         </nav>
-
+        
         <nav id="e2">
             <ul>
-                <li><a href="">Log In</a></li>
+                <li><a href="login.html">Log In</a></li> <!-- ⬅️ CAMBIA ESTO -->
                 <li><a href="">Log Out</a></li>
             </ul>
         </nav>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #132440 0%, #10408c 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    animation: aparecer 0.5s ease-in;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #132440;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.input-grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #132440;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #10408c;
+    box-shadow: 0 0 5px rgba(16, 64, 140, 0.3);
+}
+
+.mensaje-error {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+    min-height: 20px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #10408c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 15px;
+}
+
+.btn-login:hover {
+    background-color: #325b9c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(16, 64, 140, 0.3);
+}
+
+.btn-volver {
+    display: block;
+    text-align: center;
+    color: #10408c;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btn-volver:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.logo {
+    text-align: center;
+    font-size: 32px;
+    color: #10408c;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
