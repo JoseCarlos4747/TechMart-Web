@@ -2,7 +2,7 @@
 
 // Cuando se envía el formulario
 document.addEventListener('DOMContentLoaded', function() {
-    const formulario = document.getElementById('loginForm');
+    const formulario = document.getElementById('formulariodelogin');
     
     if (formulario) {
         formulario.addEventListener('submit', function(e) {
