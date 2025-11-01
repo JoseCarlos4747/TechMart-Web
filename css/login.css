@@ -95,7 +95,7 @@ input:focus {
     box-shadow: 0 5px 15px rgba(16, 64, 140, 0.3);
 }
 
-.btn-volver {
+.botonvolver {
     display: block;
     text-align: center;
     color: #10408c;
@@ -105,7 +105,7 @@ input:focus {
     transition: all 0.3s;
 }
 
-.btn-volver:hover {
+.botonvolver:hover {
     text-decoration: underline;
     transform: scale(1.05);
 }

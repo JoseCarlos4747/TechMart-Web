@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Guardar en localStorage
             localStorage.setItem('usuarioLogueado', 'true');
-            localStorage.setItem('emailUsuario', email);
+            localStorage.setItem('emailUser', email);
             localStorage.setItem('nombreUsuario', email.split('@')[0]);
             
             // Mostrar mensaje de éxito

@@ -19,7 +19,7 @@ body {
     font-size: 24px;
 }
 
-.btn-volver {
+.botonvolver {
     color: white;
     text-decoration: none;
     background-color: #10408c;
@@ -29,7 +29,7 @@ body {
     font-weight: bold;
 }
 
-.btn-volver:hover {
+.botonvolver:hover {
     background-color: #325b9c;
     transform: translateY(-2px);
 }
