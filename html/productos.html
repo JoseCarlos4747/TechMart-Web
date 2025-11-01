@@ -1,109 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/productos.css">
-    <title>TechMart - Productos Tecnológicos</title>
+    <title>TechMart</title>
+    <link rel="icon" type="image/png" href="Imagen1.png">
+    <link rel="stylesheet" href="productos.css">
+    <script src="productos.js"></script>
 </head>
 <body>
-    <!-- Encabezado -->
-    <header>
-        <h1>🛒 TechMart</h1>
-        <p>Tu tienda de tecnología de confianza</p>
-        <nav>
+    <div id="encabezado">
+        <h3>TechMart S.A.C.</h3>
+        <nav id="e1">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="INDEX.HTML">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="">Carrito Compras</a></li>
+                <li><a href="">Pagos</a></li>
+                <li><a href="">Ayuda</a></li>
             </ul>
-            <div class="cart-icon" id="cartIcon">
-                🛒 Carrito
-                <span class="cart-count" id="cartCount">0</span>
-            </div>
         </nav>
-    </header>
 
-    <!-- Contenedor principal -->
-    <div class="container">
-        <!-- Filtros -->
-        <section class="filters">
-            <h3>Filtrar por categoría</h3>
-            <div class="filter-group">
-                <label>
-                    <input type="radio" name="category" value="todos" checked>
-                    Todos
-                </label>
-                <label>
-                    <input type="radio" name="category" value="smartphones">
-                    Smartphones
-                </label>
-                <label>
-                    <input type="radio" name="category" value="laptops">
-                    Laptops
-                </label>
-                <label>
-                    <input type="radio" name="category" value="accesorios">
-                    Accesorios
-                </label>
-                <label>
-                    <input type="radio" name="category" value="audio">
-                    Audio
-                </label>
-            </div>
-        </section>
-
-        <!-- Grid de productos -->
-        <section class="products-grid" id="productsGrid"></section>
+        <nav id="e2">
+            <ul>
+                <li><a href="">Log In</a></li>
+                <li><a href="">Log Out</a></li>
+            </ul>
+        </nav>
     </div>
+    <nav id="Enlance-menu">
 
-    <!-- Modal del carrito -->
-    <div class="cart-modal" id="cartModal">
-        <div class="cart-content">
-            <div class="cart-header">
-                <h2>Mi Carrito</h2>
-                <button class="close-cart" id="closeCart">×</button>
-            </div>
-            
-            <div class="success-message" id="successMessage">
-                ¡Compra realizada con éxito! Gracias por tu compra.
-            </div>
+        <button class="menu-boton" onclick="toggleMenu()">
+        <svg width="36" height="34" >
+            <rect width="32" fill="#000" height="5" rx="15%" y="7" x="1"></rect>
+            <rect width="32" fill="#000" height="5" rx="15%" y="16" x="1"></rect>
+            <rect width="32" fill="#000" height="5" rx="15%" y="25" x="1"></rect>
+        </svg>
+        </button>
+        <ul class="nav-links" id="navlinks">
+            <li><a href="">Dispositivos Electronicos</a></li>
+            <li><a href="">Accesorios</a></li>
+            <li><a href="">Gadgets</a></li>
+        </ul>
+    </nav>
+    
 
-            <div id="cartItemsContainer">
-                <div class="cart-items" id="cartItems"></div>
-                <div class="cart-total" id="cartTotal"></div>
-            </div>
-
-            <div class="checkout-form" id="checkoutForm">
-                <h3 style="margin-bottom: 1rem; color: #667eea;">Información de Pago</h3>
-                <form id="paymentForm">
-                    <div class="form-group">
-                        <label>Nombre completo</label>
-                        <input type="text" id="cardName" required>
-                        <div class="error-message" id="nameError">Por favor ingrese un nombre válido</div>
-                    </div>
-                    <div class="form-group">
-                        <label>Número de tarjeta</label>
-                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
-                        <div class="error-message" id="cardError">Por favor ingrese un número de tarjeta válido (16 dígitos)</div>
-                    </div>
-                    <div class="form-group">
-                        <label>Fecha de expiración (MM/AA)</label>
-                        <input type="text" id="cardExpiry" placeholder="MM/AA" maxlength="5" required>
-                        <div class="error-message" id="expiryError">Por favor ingrese una fecha válida (MM/AA)</div>
-                    </div>
-                    <div class="form-group">
-                        <label>CVV</label>
-                        <input type="text" id="cardCVV" placeholder="123" maxlength="3" required>
-                        <div class="error-message" id="cvvError">Por favor ingrese un CVV válido (3 dígitos)</div>
-                    </div>
-                    <button type="submit" class="checkout-btn">Finalizar Compra</button>
-                    <button type="button" class="remove-btn" id="backToCart" style="background: #666; margin-top: 0.5rem;">Volver al Carrito</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <script src="../javascript/script.js"></script>
 </body>
 </html>
