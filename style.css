@@ -1,0 +1,127 @@
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes st{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#encabezado{
+    background-color: #132440;
+    color: white;
+    padding: 2% 2% 2% 3%;
+}
+#encabezado h3{
+    margin: 0;
+}
+#e1{
+    margin: -2.5% 26%;
+    animation: st 1s;
+
+}
+#e1 ul li{
+    display: inline;
+    background-color: #10408c;
+    padding: .9% 2%;
+    border-radius: 15rem;
+}
+#e1 ul li a{
+    color: white;
+    text-decoration: none;
+}
+#e1 ul li:hover{
+    background-color: #325b9c;
+}
+#e2{
+    margin: -2.5% 0% 0% 76% ;
+    animation: st 1s;
+
+}
+#e2 ul li{
+    display: inline;
+    background-color: #10408c;
+    padding: 2% 3%;
+    border-radius: 15rem;
+}
+#e2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+#e2 ul li:hover{
+    background-color: #325b9c;
+}
+#encabezado h1{
+    margin-top: 15%;
+}
+/****************/
+#caja1{
+    background-color: #E4E3E3;
+    display: flex;
+    padding-bottom: 3%;
+}
+#caja1 figure{
+    margin: 5% 0% 0% 15%;
+}
+#caja1 figure  img{
+    width: 450%;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px #a5a4a4;
+}
+#caja1 div{
+    margin: 7% 5% 0% 30%;
+    text-align: justify;
+}
+#caja1 div h3{
+    text-align: center;
+}
+/*****************************************************/
+#caja2{
+    display: flex;
+    margin: 4%;
+}
+
+#caja2_img img{
+    width: 80%;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px #afaeae;
+}
+
+#caja2_1{
+    margin: 2%;
+}
+.caja2_2 img{
+    width: 60%;
+    border-radius: 2rem;
+    margin-top: 25%;
+}
+/********************************************************/
+#caja3{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 4%;
+    margin-top: 1%;
+}
+/***********************/
+#caja4{
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding-bottom: 2%;
+    padding-top: 3%;
+    
+}
+#caja4 div{
+    display: flex;
+    margin: 0 0 0 24%;
+    padding-bottom: 1%;
+    
+}
+#caja4 div h4{
+    margin: 0% 5% 0% 5%;
+}
+#caja4  p
+{
+    margin-bottom: 0;
+}
