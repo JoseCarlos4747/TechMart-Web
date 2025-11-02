@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="icon" type="image/png" href="Imagen1.png">
+    <script src="./js/bicicletas.js"></script>
+    <script src="js/carrito.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <title>TechMart - Carrito</title>
+</head>
+
+<body>
+    <header>
+    <div id="encabezado">
+        <h3>TechMart S.A.C.</h3>
+        <nav id="e1">
+            <ul>
+                <li><a href="INDEX.HTML">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="">Carrito Compras</a><span id="cuenta-carrito">0</span></li>
+                <li><a href="">Pagos</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+        </nav>
+        <nav id="e2">
+            <ul>
+                <li><a href="">Log In</a></li>
+                <li><a href="">Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
+        <section id="cart-container">
+        </section>
+        <section id="totales">
+            <p>Total unidades: <span id="cantidad">0</span></p>
+            <p>Total precio: $<span id="precio">0</span></p>
+            <button disabled>Comprar</button>
+            <button id="reiniciar">Reiniciar</button>
+        </section>
+    </main>
+    <footer>
+        <div id="caja4">
+        <div>
+            <h4>Libro de Reclamaciones</h4>
+            <h4>Ayuda y soporte</h4>
+            <h4>Informacion</h4>
+        </div>
+        <p><code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem minus adipisci. Facere enim quis non quos, aliquid repudiandae at.</code></p>
+    </div>
+    </footer>
+</body>
+
+</html>
