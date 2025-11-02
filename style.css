@@ -22,8 +22,8 @@ body{
 }
 #enlace1 ul li{
     display: inline;/*El display define como se muestra un elemento*/
-    background-color: #08295e;
-    padding: .9% 2%;
+    background-color: #062e6d;
+    padding: 1% 3%;
     border-radius: 15rem;
 }
 #enlace1 ul li a{
@@ -40,8 +40,8 @@ body{
 }
 #enlace2 ul li{
     display: inline;/*El display define como se muestra un elemento*/
-    background-color: #08295e;
-    padding: 2% 3%;
+    background-color: #062e6d;
+    padding: 3% 4%;
     border-radius: 15rem;
 }
 #enlace2 ul li a{
@@ -128,8 +128,10 @@ body{
 }
 
 #caja3 form button{
-    padding: 1% 2%;
-    border-radius: 2rem;
+    padding: 1% 3%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #bebdbd;
+    border: none;
     border-color: #d3d7dc;
     cursor: pointer;
 }
@@ -176,7 +178,7 @@ body{
 #Detalles_Compra{
     background-color: white;
     border-radius: 2rem;
-    box-shadow: 5px 5px 10px #000000;
+    box-shadow: 5px 5px 15px #000000;
     margin: 0 25% 0 25%;
     animation: transicion 1s;
     padding-bottom: 2%;
@@ -216,7 +218,7 @@ body{
     border: none;
     font-size: 105%;
     cursor: pointer;
-    padding: 1.5% 3.5%;
+    padding: 1% 3%;
     margin: 5% 15% 0% 15%;
 
 }
@@ -236,7 +238,7 @@ body{
 #Informacion_Direccion{
     background-color: white;
     border-radius: 2rem; /*PAra el borde*/
-    box-shadow: 5px 5px 10px #000000;/*Para la sombra*/
+    box-shadow: 5px 5px 15px #000000;/*Para la sombra*/
     margin: -1.5% 25% 0 25%;
     position: relative;
     animation: transicion 1s;
