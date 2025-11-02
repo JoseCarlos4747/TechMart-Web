@@ -174,7 +174,7 @@ body{
 
 /**Detalles de compraaaaa**/
 #Detalles_Compra{
-    background-color: #E4E3E3;
+    background-color: white;
     border-radius: 2rem;
     box-shadow: 5px 5px 10px #000000;
     margin: 0 25% 0 25%;
@@ -210,13 +210,22 @@ body{
     margin-right: -6%;
 }
 #Detalles_Compra div button{
-    border-radius: 2rem;
+    border-radius: 8px;
+    background-color: #10408c;
+    color: white;
+    border: none;
+    font-size: 105%;
     cursor: pointer;
-    padding: 1% 2% 1% 2%;
+    padding: 1.5% 3.5%;
     margin: 5% 15% 0% 15%;
+
 }
 #Detalles_Compra div button:hover{
-    background-color: #bcbbbc;
+    background-color: #325b9c;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgb(16, 64, 140, 0.3);
+    /* 0=sin desplazamiento en x,,, 5px=despalazmiento en Y hacia abajo
+    15px=cuan difuminado es*/
 }
 #Detalles_Compra div{
     margin: 0 auto;/*0 de arriba y abajo,,, auto a los lados*/
@@ -225,7 +234,7 @@ body{
 
 /*InformaCION Y DIRECCION*/
 #Informacion_Direccion{
-    background-color: #E4E3E3;
+    background-color: white;
     border-radius: 2rem; /*PAra el borde*/
     box-shadow: 5px 5px 10px #000000;/*Para la sombra*/
     margin: -1.5% 25% 0 25%;
@@ -245,26 +254,33 @@ body{
     padding-bottom: 2%;
     text-align: center;
 }
-#Informacion_Direccion button:hover{
-    background-color: #bcbbbc;
-}
 #Informacion_Direccion form  fieldset input{
     border-radius: 2rem;
-    border: none;
+    border: 2px solid #ddd;
     padding: 1.5% 0% 1.5% 2%;
+}
+#Informacion_Direccion form fieldset input:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgb(16, 64, 140, 0.3);
 }
 #Informacion_Direccion select{
     border-radius: 2rem;
     padding: 1.5% 0% 1.5% 2%;
 }
 #Informacion_Direccion div button{
-    border-radius: 2rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #10408c;
+    color: white;
+    font-size: 105%;
     cursor: pointer;
-    padding: 2% 3% 2% 3%;
+    padding: 1.5% 3.5%;
     margin: 5% 15% 0% 15%;
 }
 #Informacion_Direccion div button:hover{
-    background-color: #bcbbbc;
+    background-color: #325b9c;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgb(16, 64, 140, 0.3);
 }
 #Informacion_Direccion div{
     margin: 0 auto;/*0 de arriba y abajo,,, auto a los lados*/
@@ -273,7 +289,7 @@ body{
 /*Pagarrrrr**************************/
 #Pagar{
     display: flex;
-    background-color: #E4E3E3;
+    background-color: white;
     border-radius: 2rem;
     box-shadow: 5px 5px 10px #000000;
     margin: 0 25% 0 25%;
@@ -290,23 +306,29 @@ body{
 #Metodo form fieldset{
     border: none;
 }
-#Metodo_Imagenes{
-    
-    align-items: center;
-    display: none;
-}
+
 #Metodo form div {
     text-align: center;
     margin-top: 15%;
 }
 #Metodo form div button{
-    border-radius: 2rem;
-    padding:3% 4% 3% 4%;
+    border-radius: 8px;
+    background-color: #10408c;
+    border: none;
+    color: white;
+    padding: 3% 4%;
     margin: 0% 12% 0% 6%;
+    font-size: 105%;
     cursor: pointer;
 }
 #Metodo form div button:hover{
-    background-color: #bcbbbc;
+    background-color: #325b9c;
+    box-shadow: 0 5px 15px rgb(16, 64, 140, 0.3);
+    transform: translateY(-1px);
+}
+#Metodo_Imagenes{
+    align-items: center;
+    display: none;
 }
 #Metodo_Imagenes figure img{
     border-radius: .3rem;
@@ -317,13 +339,19 @@ body{
     padding-left: 7%;
 }
 #Metodo_Imagenes button{
-    border-radius: 2rem;
+    border-radius: 8px;
+    background-color: #10408c;
+    color: white;
+    border: none;
     padding: 3% 4% 3% 4%;
     margin-left: 42%;
     cursor: pointer;
+    font-size: 105%;
 }
 #Metodo_Imagenes button:hover{
-    background-color: #bcbbbc;
+    background-color: #325b9c;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgb(16, 64, 140, 0.3);
 }
 
 

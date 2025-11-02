@@ -49,10 +49,10 @@ BotonAtras_pago_2.addEventListener("click",function()
     Info_direc.style.display="none";
     
 })
-BotonContinuar_pago_2.addEventListener("click",function(event)
-{
 
-    event.preventDefault();//Para que no se cierre esta ventana, evitar enviar el formulario y que se recargue la pagina
+BotonContinuar_pago_2.addEventListener("click",function(e)
+{
+    e.preventDefault();//Para que no se cierre esta ventana, evitar enviar el formulario y que se recargue la pagina
     const Input_departamento=document.getElementById("Departamento").value.trim();//trim para omitir espacios
     const Input_nombre=document.getElementById("name").value.trim();
     const Input_apellidocompleto=document.getElementById("apellido_completo").value.trim();
@@ -66,18 +66,19 @@ BotonContinuar_pago_2.addEventListener("click",function(event)
     Metodo_pago.style.display="flex";
     Info_direc.style.display="none";
 });
+
 BotonAtras_pago_3.addEventListener("click",function()
 {
-    const opcion_radiosButton=document.getElementsByName("metodopago");
     opcion_radiosButton.forEach(radio=> radio.checked=false);
+    const opcion_radiosButton=document.getElementsByName("metodopago");
 
     Metodo_pago.style.display="none";
     Info_direc.style.display="block";
     YAPE.style.display="none";
 });
-BotonContinuar_pago_3.addEventListener("click",function(event)
+BotonContinuar_pago_3.addEventListener("click",function(e)
 {
-    event.preventDefault();//Para que no se cierre esta ventana, evitar enviar el formulario y que se recargue la pagina
+    e.preventDefault();//Para que no se cierre esta ventana, evitar enviar el formulario y que se recargue la pagina
     const Input_radio_yape=document.getElementById("yape");
     const Input_radio_tarjeta=document.getElementById("tarjeta");
     const Input_radio_Entrega=document.getElementById("ConEntrega");
@@ -92,10 +93,24 @@ BotonContinuar_pago_3.addEventListener("click",function(event)
 
 BotonConfirmar_pago_4.addEventListener("click",function()
 {
+    const Input_departamento=document.getElementById("Departamento");//trim para omitir espacios
+    const Input_nombre=document.getElementById("name");
+    const Input_apellidocompleto=document.getElementById("apellido_completo");
+    const Input_direccion=document.getElementById("direccion");
+    const Input_telefono=document.getElementById("telefono");
+    const opcion_radiosButton=document.getElementsByName("metodopago");
+
     alert("Pago realizado con exito ✅");
     YAPE.style.display="none";
     Metodo_pago.style.display="none";
     general.style.filter="none";
+    Input_departamento.value="";
+    Input_apellidocompleto.value="";
+    Input_nombre.value="";
+    Input_direccion.value="";
+    Input_telefono.value="";
+    opcion_radiosButton.forEach(radio=>radio.checked=false);
+
 });
 
 ///////////////////////////////////////////////////////////////////
