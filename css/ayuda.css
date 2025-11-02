@@ -1,5 +1,4 @@
 /* ========== ESTILOS BASE ========== */
-/* Reset y configuración del body */
 body {
     margin: 0;
     padding: 0;
@@ -8,63 +7,38 @@ body {
 }
 
 /* ========== ENCABEZADO PRINCIPAL ========== */
-/* Barra superior con logo y navegación */
 #encabezado {
-    background: linear-gradient(135deg, #132440 0%, #10408c 100%);
+    background-color: #132440;
     color: white;
     padding: 20px 40px;
-    display: flex; /* Usar flexbox para alinear elementos */
-    justify-content: space-between; /* Separar logo y botón */
-    align-items: center; /* Centrar verticalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    animation: deslizarAbajo 0.6s ease-out;
 }
 
-/* Título del logo en el encabezado */
 #encabezado h3 {
     margin: 0;
     font-size: 24px;
 }
 
 /* ========== BOTÓN VOLVER ========== */
-/* Botón para regresar a la tienda */
 .botonvolver {
     color: white;
     text-decoration: none;
     background-color: #10408c;
     padding: 12px 25px;
     border-radius: 8px;
-    transition: all 0.3s; /* Transición suave en hover */
     font-weight: bold;
-    position: relative;
-    overflow: hidden;
+    transition: 0.3s;
 }
 
-/* Efecto hover en botón volver */
 .botonvolver:hover {
     background-color: #325b9c;
-    transform: translateY(-2px); /* Eleva el botón 2px */
+    transform: translateY(-3px);
 }
 
-/* Efecto de brillo que se desplaza en hover */
-.botonvolver::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    transition: all 0.5s;
-}
-
-/* Activar el efecto de brillo al hacer hover */
-.botonvolver:hover::before {
-    left: 100%;
-}
-
-/* ========== CONTENEDOR PRINCIPAL DE AYUDA ========== */
-/* Caja blanca central que contiene todo el contenido */
+/* ========== CONTENEDOR PRINCIPAL ========== */
 .ayuaaa {
     max-width: 900px;
     margin: 40px auto;
@@ -72,240 +46,92 @@ body {
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    animation: aparecer 0.5s;
 }
 
 /* ========== TÍTULOS ========== */
-/* Título principal de la página */
 h1 {
     color: #132440;
     text-align: center;
     margin-bottom: 40px;
     font-size: 36px;
-    animation: fadeIn 1s ease-in;
 }
 
-/* ========== SECCIONES DE CONTENIDO ========== */
-/* Cada caja de información (métodos de pago, envíos, etc.) */
-.seccion {
+/* ========== DATA ========== */
+.DATA {
     margin-bottom: 30px;
     padding: 25px;
-    border-left: 5px solid #10408c; /* Borde izquierdo azul */
+    border-left: 5px solid #10408c;
     background-color: #C2E2FA;
     border-radius: 8px;
-    transition: all 0.3s; /* Transición para efectos hover */
+    transition: 0.3s;
 }
 
-/* Efecto hover en secciones - se desplaza a la derecha */
-.seccion:hover {
-    transform: translateX(5px);
+.DATA:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateX(10px);
 }
 
-/* Subtítulos dentro de cada sección */
-.seccion h2 {
+.DATA h2 {
     color: #10408c;
     margin-bottom: 15px;
     font-size: 24px;
 }
 
-/* Párrafos dentro de secciones */
-.seccion p {
+.DATA p {
     color: #333;
     line-height: 1.8;
     margin-bottom: 10px;
     font-size: 16px;
 }
 
-/* Listas ordenadas y desordenadas */
-.seccion ul, .seccion ol {
+.DATA ul, .DATA ol {
     color: #333;
     line-height: 2;
     padding-left: 25px;
     font-size: 16px;
 }
 
-/* Items de lista con efecto hover */
-.seccion li {
+.DATA li {
     margin-bottom: 10px;
-    transition: all 0.3s ease;
     padding-left: 5px;
+    transition: 0.2s;
 }
 
-/* Efecto hover en items de lista - se desplazan y cambian color */
-.seccion li:hover {
-    transform: translateX(10px);
+.DATA li:hover {
+    transform: translateX(5px);
     color: #10408c;
-    font-weight: bold;
-}
-
-/* ========== ICONOS ========== */
-/* Emojis decorativos en títulos de secciones */
-.icono {
-    font-size: 24px;
-    margin-right: 10px;
-    display: inline-block;
-    animation: pulsoIcono 2s ease-in-out infinite;
 }
 
 /* ========== IMÁGENES ========== */
-/* Imágenes decorativas dentro de cada sección */
-.seccion-imagen {
+.ayudaimagen {
     width: 100%;
     max-width: 400px;
     height: 250px;
-    object-fit: cover; /* Mantiene proporción de imagen */
+    object-fit: cover;
     border-radius: 10px;
     margin: 20px auto;
     display: block;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: all 0.4s ease;
+    transition: 0.4s;
 }
 
-/* Efecto hover en imágenes - crece y rota ligeramente */
-.seccion-imagen:hover {
-    transform: scale(1.05) rotate(2deg);
+.ayudaimagen:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform: scale(1.05);
 }
 
-/* ========== BADGE IMPORTANTE ========== */
-/* Etiqueta destacada para información importante */
-.badge-importante {
-    display: inline-block;
-    background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+/* ========== BADGE "EXTRA" ========== */
+.extra {
+    background-color: #ff6b6b;
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
-    animation: rebote 1s ease-in-out infinite;
     margin-left: 10px;
 }
 
-/* ========== ANIMACIONES ========== */
-/* Animación de entrada principal - aparece desde abajo */
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Animación del encabezado - baja desde arriba */
-@keyframes deslizarAbajo {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Animación de pulso para iconos - crecen y se encogen */
-@keyframes pulsoIcono {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-}
-
-/* Animación fade-in para títulos */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Animación de rebote para badges */
-@keyframes rebote {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
-
-/* ========== ANIMACIONES ESCALONADAS ========== */
-/* Cada sección aparece con un pequeño retraso */
-.seccion:nth-child(2) {
-    animation: aparecer 0.6s ease-out 0.1s backwards;
-}
-
-.seccion:nth-child(3) {
-    animation: aparecer 0.6s ease-out 0.3s backwards;
-}
-
-.seccion:nth-child(4) {
-    animation: aparecer 0.6s ease-out 0.5s backwards;
-}
-
-.seccion:nth-child(5) {
-    animation: aparecer 0.6s ease-out 0.7s backwards;
-}
-
-.seccion:nth-child(6) {
-    animation: aparecer 0.6s ease-out 0.9s backwards;
-}
-
-/* ========== CONTENEDOR DE VIDEO ========== */
-/* Contenedor responsivo para videos de YouTube */
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    margin: 30px auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    transition: all 0.4s ease;
-    animation: aparecer 0.8s ease-out;
-}
-
-/* Efecto hover en contenedor de video */
-.video-container:hover {
-    transform: scale(1.03); /* Crece ligeramente */
-    box-shadow: 0 12px 35px rgba(16, 64, 140, 0.4);
-}
-
-/* iframe del video responsivo */
-.video-container iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-    display: block;
-}
-
-/* ========== DISEÑO RESPONSIVO ========== */
-/* Ajustes para tablets y pantallas medianas */
-@media (max-width: 768px) {
-    .ayuaaa {
-        margin: 20px;
-        padding: 20px;
-    }
-    
-    /* Encabezado en columna para móviles */
-    #encabezado {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-    
-    /* Video más pequeño en tablets */
-    .video-container iframe {
-        height: 300px;
-    }
-}
-
-/* Ajustes para móviles pequeños */
-@media (max-width: 480px) {
-    /* Video aún más pequeño en móviles */
-    .video-container iframe {
-        height: 250px;
-    }
+.icono {
+    font-size: 40px;
+    margin-right: 10px;
 }
