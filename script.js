@@ -2,10 +2,6 @@
 const Pago=document.getElementById("Pago");
 //const para evitar posibles errores tecnicos, tambien se puede usar let
 
-
-
-
-
 const BotonAbrir_pago=document.getElementById("AbrirPago");
 const BotonCerrar_pago=document.getElementById("CerrarPago");
 const BotonContinuar_pago_1=document.getElementById("ContinuarPago1");
@@ -21,9 +17,6 @@ const BotonAtras_pago_3=document.getElementById("AtrasPago3");
 const BotonConfirmar_pago_4=document.getElementById("ConfirmarPago");
 
 const YAPE=document.getElementById("Metodo_Imagenes");
-
-
-
 
 BotonAbrir_pago.addEventListener("click",function()
 //el addEventlistener es para escuchar eventos como clicks, movimientos del mouse, etc
@@ -104,3 +97,5 @@ BotonConfirmar_pago_4.addEventListener("click",function()
     Metodo_pago.style.display="none";
     general.style.filter="none";
 });
+
+///////////////////////////////////////////////////////////////////

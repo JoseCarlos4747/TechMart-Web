@@ -6,44 +6,165 @@
     <title>TechMart</title>
     <link rel="icon" type="image/png" href="Imagen1.png">
     <link rel="stylesheet" href="productos.css">
-    <script src="productos.js"></script>
+    
 </head>
 <body>
-    <div id="encabezado">
-        <h3>TechMart S.A.C.</h3>
-        <nav id="e1">
-            <ul>
-                <li><a href="INDEX.HTML">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="">Carrito Compras</a></li>
-                <li><a href="">Pagos</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
-        </nav>
+    <div id="general">
+        <div id="encabezado">
+            <h3>TechMart S.A.C.</h3>
+                <nav id="enlace1">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a id="AbrirCarrito" href="#">Carrito Compras</a></li>
+                        <li><a id="AbrirPago" href="#">Pagos</a></li>
+                        <li><a id="AbrirAyuda" href="#">Ayuda</a></li>
+                    </ul>
+                </nav> 
 
-        <nav id="e2">
-            <ul>
-                <li><a href="">Log In</a></li>
-                <li><a href="">Log Out</a></li>
+                <nav id="enlace2">
+                    <ul>
+                        <li ><a id="AbrirInicio" href="#">Log In</a></li>
+                        <li><a id="AbrirSalida" href="#">Log Out</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <nav id="Enlance-menu">
+
+            <button class="menu-boton" onclick="toggleMenu()">
+            <svg width="36" height="34" >
+                <rect width="32" fill="#000" height="5" rx="15%" y="7" x="1"></rect>
+                <rect width="32" fill="#000" height="5" rx="15%" y="16" x="1"></rect>
+                <rect width="32" fill="#000" height="5" rx="15%" y="25" x="1"></rect>
+            </svg>
+            </button>
+            <ul class="nav-links" id="navlinks">
+                <li><a href="">Dispositivos Electronicos</a></li>
+                <li><a href="">Accesorios</a></li>
+                <li><a href="">Gadgets</a></li>
             </ul>
         </nav>
     </div>
-    <nav id="Enlance-menu">
-
-        <button class="menu-boton" onclick="toggleMenu()">
-        <svg width="36" height="34" >
-            <rect width="32" fill="#000" height="5" rx="15%" y="7" x="1"></rect>
-            <rect width="32" fill="#000" height="5" rx="15%" y="16" x="1"></rect>
-            <rect width="32" fill="#000" height="5" rx="15%" y="25" x="1"></rect>
-        </svg>
-        </button>
-        <ul class="nav-links" id="navlinks">
-            <li><a href="">Dispositivos Electronicos</a></li>
-            <li><a href="">Accesorios</a></li>
-            <li><a href="">Gadgets</a></li>
-        </ul>
-    </nav>
     
 
+
+    <!--------PANTALLA DE PAGO------->
+    <div id="Pago" class="Pago">
+            <!------PAso 1------>
+            
+            <div id="Detalles_Compra">
+                <h1 id="CerrarPago">X</h1>
+                <table>
+                    <caption><h2>Detalles de la compra</h2></caption><!--Para el titulo-->
+                    <tbody>
+                        <tr><!--el Tr Para agregar una fila-->
+                            <td>Numero de articulos Elegidos</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td>Descuentos</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal </td>
+                            <td>25</td>
+                            
+                        </tr>
+                        <tr>
+                            <td><hr></td><!-- El hr para poner una linea horizontal-->
+                        </tr>
+                        <tr>
+                            
+                            <td>Total a pagar</td>
+                            <td>255</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <button type="submit" id="ContinuarPago1">Siguiente</button>
+                </div>
+                
+            </div>
+            <!-------PAso 2------->
+            <div id="Informacion_Direccion">
+                <form action="">
+                    <h2>Informacion y Direccion</h2>
+                    <fieldset>
+                        <label for="Departamento">Departamento: </label>
+                        <select name="Departamento" id="Departamento" required><!--Select para el menu desplegable-->
+                            <!-- el name es el dato que envia al servidor-->
+                            <!--Option es para una opcion de la lista-->
+                            <!--Value para enviar el dato al servidor-->
+                            <option value=""></option>
+                            <option value="Arequipa">Arequipa</option>
+                            <option value="Moquegua">Moquegua</option>
+                            <option value="Tacna">Tacna</option>
+                            <option value="Lima">Lima</option>
+                            <option value="Cusco">Cusco</option>
+                            <option value="Ayacucho">Ayacucho</option>
+                            <option value="Puno">Puno</option>
+                            <option value="Madre de dios">Madre de dios</option>
+                            <option value="Piura">Piura</option>
+                            <option value="Cajamarca">Cajamarca</option>
+                            <option value="Huanuco">Huanuco</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="name">Ingrese su nombre: </label><!--For: se conecta con el id del input-->
+                        <input type="text" name="name" id="name" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="apellido_completo">Apellido completo : </label>
+                        <input type="text" name="apellido_completo" id="apellido_completo" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="direccion">Direccion: </label>
+                        <input type="text" name="direccion" id="direccion" required >
+                    </fieldset>
+                    <fieldset>
+                        <label for="telefono">Telefono de contacto: </label>
+                        <input type="tel" name="telefono" id="telefono" required placeholder="Ejmpl. 987654321">
+                    </fieldset>
+                    <div>
+                        <button id="AtrasPago2" type="submit">Atras</button>
+                        <button id="ContinuarPago2" type="submit">Siguiente</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <!-------PAso 3------->
+            <div id="Pagar">
+                
+                <div id="Metodo">
+                    <form action="">
+                        <legend><h2>Confirmacion del pago</h2></legend>
+                        <fieldset>
+                            <input type="radio" id="yape" name="metodopago" required>
+                            <label for="yape">Yape</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="radio" id="tarjeta" name="metodopago" required>
+                            <label for="tarjeta">Tarjeta</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="radio" name="metodopago" id="ConEntrega" required>
+                            <label for="ConEntrega">Contra Entrega</label>
+                        </fieldset>
+                        <div>
+                            <button id="AtrasPago3" type="submit">Atras</button>
+                            <button id="ContinuarPago3" type="submit">Siguiente</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div id="Metodo_Imagenes">
+                    <figure><!--Para agrupar contenidoo-->
+                        <img width="170" src="WhatsApp Image 2025-11-01 at 11.06.44 AM.jpeg" alt="">
+                    </figure>
+                    <button id="ConfirmarPago" type="submit">Confirmar</button>
+                </div>
+            </div>
+        </div>
+<script src="productos.js"></script>
 </body>
 </html>
