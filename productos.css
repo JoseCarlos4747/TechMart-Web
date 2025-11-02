@@ -7,9 +7,9 @@ body{
     to{opacity: 1;}
 }
 #encabezado{
-    background-color: #132440;
+    background-image: url(4c443d9d-42db-46b5-a141-19bb7ca70f74.jpg);
     color: white;
-    padding: 2% 2% 2% 3%;
+    padding: 3% 2% 2% 3%;
 }
 #encabezado h3{
     margin: 0;
@@ -20,7 +20,7 @@ body{
 }
 #e1 ul li{
     display: inline;
-    background-color: #10408c;
+    background-color: #08295e;
     padding: .9% 2%;
     border-radius: 15rem;
 }
@@ -29,7 +29,7 @@ body{
     text-decoration: none;
 }
 #e1 ul li:hover{
-    background-color: #325b9c;
+    background-color: #265cb2;
 }
 #e2{
     margin: -2.5% 0% 0% 75% ;
@@ -37,7 +37,7 @@ body{
 }
 #e2 ul li{
     display: inline;
-    background-color: #10408c;
+    background-color: #08295e;
     padding: 2% 3%;
     border-radius: 15rem;
 }
@@ -46,7 +46,7 @@ body{
     text-decoration: none;
 }
 #e2 ul li:hover{
-    background-color: #325b9c;
+    background-color: #265cb2;
 }
 /**********************************/
 .menu-boton{

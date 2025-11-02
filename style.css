@@ -2,62 +2,62 @@ body{
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-@keyframes transicion{
+/************************************/
+@keyframes transicion{/*Para definir animaciones el keyframes*/
     from{opacity: 0;}
     to{opacity: 1;}
 }
 #encabezado{
-    background-color: #132440;
+    background-image: url(4c443d9d-42db-46b5-a141-19bb7ca70f74.jpg);
     color: white;
     padding: 2% 2% 2% 3%;
 }
 #encabezado h3{
-    margin: 0;
+    margin-top: 1%;
 }
-#e1{
+#enlace1{
     margin: -2.5% 26%;
     animation: transicion 1s;
 
 }
-#e1 ul li{
-    display: inline;
-    background-color: #10408c;
+#enlace1 ul li{
+    display: inline;/*El display define como se muestra un elemento*/
+    background-color: #08295e;
     padding: .9% 2%;
     border-radius: 15rem;
 }
-#e1 ul li a{
+#enlace1 ul li a{
     color: white;
     text-decoration: none;
 }
-#e1 ul li:hover{
-    background-color: #325b9c;
+#enlace1 ul li:hover{
+    background-color: #265cb2;
 }
-#e2{
+#enlace2{
     margin: -2.5% 0% 0% 76% ;
     animation: transicion 1s;
 
 }
-#e2 ul li{
-    display: inline;
-    background-color: #10408c;
+#enlace2 ul li{
+    display: inline;/*El display define como se muestra un elemento*/
+    background-color: #08295e;
     padding: 2% 3%;
     border-radius: 15rem;
 }
-#e2 ul li a{
+#enlace2 ul li a{
     color: white;
     text-decoration: none;
 }
-#e2 ul li:hover{
-    background-color: #325b9c;
+#enlace2 ul li:hover{
+    background-color: #265cb2;
 }
 #encabezado h1{
     margin-top: 15%;
 }
-/****************/
+/*****************************************/
 #caja1{
     background-color: #E4E3E3;
-    display: flex;
+    display: flex;/*El display define como se muestra un elemento*/
     padding-bottom: 3%;
 }
 #caja1 figure{
@@ -75,9 +75,9 @@ body{
 #caja1 div h3{
     text-align: center;
 }
-/*****************************************************/
+/*****************************************/
 #caja2{
-    display: flex;
+    display: flex;/*El display define como se muestra un elemento*/
     margin: 4%;
 }
 
@@ -95,15 +95,48 @@ body{
     border-radius: 2rem;
     margin-top: 25%;
 }
-/********************************************************/
+/***************************************/
 #caja3{
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 4%;
     margin-top: 1%;
 }
-/***********************/
+#caja3 form{
+    background-color: #E4E3E3;
+    padding: 2% 1% 5% 1%;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+#caja3 form legend{
+    font-size: 115%;
+    margin-bottom: 5%;
+}
+#caja3 form fieldset{
+    border: none;
+    margin: 2%;
+}
+#caja3 form fieldset input{
+    border: none;
+    border-radius: 1rem;
+    margin: 0 2%;
+    padding: 0.3% 1%;
+}
+#caja3 form fieldset label{
+    margin-right: -1%;
+}
+
+#caja3 form button{
+    padding: 1% 2%;
+    border-radius: 2rem;
+    border-color: #d3d7dc;
+    cursor: pointer;
+}
+#caja3 form button:hover{
+    background-color: #dbd9d9;
+}
+/**************************************/
 #caja4{
     text-align: center;
     background-color: #000000;
@@ -113,7 +146,7 @@ body{
     
 }
 #caja4 div{
-    display: flex;
+    display: flex;/*El display define como se muestra un elemento*/
     margin: 0 0 0 24%;
     padding-bottom: 1%;
     
@@ -125,9 +158,8 @@ body{
 {
     margin-bottom: 0;
 }
-
+/****************************************/
 /* Pantalla de pago*/
-
 .Pago{
     
     text-align: justify;
@@ -137,58 +169,7 @@ body{
     display: none;/*PAra que desapaerzca de la pagina*/
     top: 0;
     left: 0;
-    position: fixed;/* Para que no se mueva los contenedores al mover la rueda del mouse*/
-}
-
-
-/*InformaCION Y DIRECCION*/
-#Informacion_Direccion{
-    background-color: #E4E3E3;
-    border-radius: 2rem; /*PAra el borde*/
-    box-shadow: 5px 5px 10px #000000;/*Para la sombra*/
-    margin: 0 25% 0 25%;
-    position: relative;
-    animation: transicion 1s;
-
-    
-}
-#Informacion_Direccion form{
-    padding-bottom: 5%;
-    margin: 0 18% 0 18%
-}
-#Informacion_Direccion form fieldset{
-    border: none;
-}
-#Informacion_Direccion h1{
-    margin: -3% 0% 0% 90%;
-    cursor: pointer;
-    padding-top: 5%;
-    position: absolute;
-}
-#Informacion_Direccion form h2{
-    margin-top: 5%;
-    padding-top: 8%;
-    padding-bottom: 2%;
-    text-align: center;
-}
-#Informacion_Direccion button{
-    margin:5% 0% 0% 40%;
-
-    border-radius: 2rem;
-    padding: 2% 3% 2% 3%;
-    cursor: pointer;
-}
-#Informacion_Direccion button:hover{
-    background-color: #bcbbbc;
-}
-#Informacion_Direccion form  fieldset input{
-    border-radius: 2rem;
-    border: none;
-    padding: 1.5% 0% 1.5% 2%;
-}
-#Informacion_Direccion select{
-    border-radius: 2rem;
-    padding: 1.5% 0% 1.5% 2%;
+    position: fixed;/* fixed Para que no se mueva los contenedores al mover la rueda del mouse*/
 }
 
 /**Detalles de compraaaaa**/
@@ -201,23 +182,33 @@ body{
     padding-bottom: 2%;
 }
 #Detalles_Compra table {
-    margin: 0 10% 0 10%;
-    display: block;
+    margin: 0 auto;
     
-    
+}
+#CerrarPago{
+    margin: 0% 0% 0% 45%;
+    cursor: pointer;
+    padding-top: 2%;
+    position: absolute;
+    color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #Detalles_Compra table tbody tr td{
     padding-bottom: 5%;
     margin-right: 5%;
+    
+}
+#Detalles_Compra table tbody tr td hr{
+    margin-right: -14%;
 }
 #Detalles_Compra table caption{
     padding-bottom: 5%;
-    padding-top:2%;
+    padding-top:6%;
     display: block;
-    text-align: center;
+    margin-left: 6%;
+    margin-right: -6%;
 }
-
 #Detalles_Compra div button{
     border-radius: 2rem;
     cursor: pointer;
@@ -231,6 +222,61 @@ body{
     margin: 0 auto;/*0 de arriba y abajo,,, auto a los lados*/
     text-align: center;
 }
+
+/*InformaCION Y DIRECCION*/
+#Informacion_Direccion{
+    background-color: #E4E3E3;
+    border-radius: 2rem; /*PAra el borde*/
+    box-shadow: 5px 5px 10px #000000;/*Para la sombra*/
+    margin: -1.5% 25% 0 25%;
+    position: relative;
+    animation: transicion 1s;
+
+    
+}
+#Informacion_Direccion form{
+    padding-bottom: 5%;
+    margin: 0 18% 0 18%
+}
+#Informacion_Direccion form fieldset{
+    border: none;
+}
+
+#Informacion_Direccion form h2{
+    margin-top: 5%;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+#Informacion_Direccion button:hover{
+    background-color: #bcbbbc;
+}
+#Informacion_Direccion form  fieldset input{
+    border-radius: 2rem;
+    border: none;
+    padding: 1.5% 0% 1.5% 2%;
+}
+#Informacion_Direccion select{
+    border-radius: 2rem;
+    padding: 1.5% 0% 1.5% 2%;
+}
+#Informacion_Direccion div button{
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 2% 3% 2% 3%;
+    margin: 5% 15% 0% 15%;
+}
+#Informacion_Direccion div button:hover{
+    background-color: #bcbbbc;
+}
+#Informacion_Direccion div{
+    margin: 0 auto;/*0 de arriba y abajo,,, auto a los lados*/
+    text-align: center;
+}
+
+
+
 /*Pagarrrrr*/
 #Pagar{
     display: flex;
