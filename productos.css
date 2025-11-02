@@ -20,8 +20,8 @@ body{
 }
 #enlace1 ul li{
     display: inline;
-    background-color: #08295e;
-    padding: .9% 2%;
+    background-color: #062e6d;
+    padding: 1% 3%;
     border-radius: 15rem;
 }
 #enlace1 ul li a{
@@ -37,8 +37,8 @@ body{
 }
 #enlace2 ul li{
     display: inline;
-    background-color: #08295e;
-    padding: 2% 3%;
+    background-color: #062e6d;
+    padding: 3% 4%;
     border-radius: 15rem;
 }
 #enlace2 ul li a{
