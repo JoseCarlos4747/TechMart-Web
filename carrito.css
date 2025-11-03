@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+#encabezado {
+  background: #132440;
+  color: white;
+  padding: 20px;
+}
+
+#e1 {
+  margin: -2.5% 25%;
+}
+#e2 {
+  margin: -2.5% 0 0 75%;
+}
+
+#e1 ul li,
+#e2 ul li {
+  display: inline;
+  background: #10408c;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+#e1 ul li a,
+#e2 ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #132440;
+}
+
+.mensaje-vacio {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  display: none;
+}
+
+.carrito-contenido {
+  display: none;
+  gap: 20px;
+}
+.resumen-compra {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.resumen-linea {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.producto-carrito {
+  display: flex;
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.producto-imagen {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.producto-info {
+  flex: 1;
+}
+.producto-precio {
+  color: #10408c;
+  font-weight: bold;
+}
+
+.producto-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  background: #10408c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cantidad-btn,
+.eliminar-btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cantidad-btn {
+  background: #f0f0f0;
+}
+.eliminar-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
