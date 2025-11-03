@@ -60,10 +60,10 @@ h1 {
 .DATA {
     margin-bottom: 30px;
     padding: 25px;
-    border-left: 5px solid #10408c;
+    border-left: 15px solid #10408c;
     background-color: #C2E2FA;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .DATA:hover {
@@ -78,14 +78,14 @@ h1 {
 }
 
 .DATA p {
-    color: #333;
+    color: #000000;
     line-height: 1.8;
     margin-bottom: 10px;
     font-size: 16px;
 }
 
 .DATA ul, .DATA ol {
-    color: #333;
+    color: #000000;
     line-height: 2;
     padding-left: 25px;
     font-size: 16px;
@@ -122,7 +122,7 @@ h1 {
 
 /* ========== BADGE "EXTRA" ========== */
 .extra {
-    background-color: #ff6b6b;
+    background-color: #ff9100;
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
@@ -130,7 +130,7 @@ h1 {
     font-weight: bold;
     margin-left: 10px;
 }
-
+/* ========== ESTILO PARA LOS ICONOS ========== */
 .icono {
     font-size: 40px;
     margin-right: 10px;
