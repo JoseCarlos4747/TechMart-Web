@@ -1,0 +1,137 @@
+/* ========== ESTILOS BASE ========== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C2E2FA;
+}
+
+/* ========== ENCABEZADO PRINCIPAL ========== */
+#encabezado {
+    background-color: #132440;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+#encabezado h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* ========== BOTÓN VOLVER ========== */
+.botonvolver {
+    color: white;
+    text-decoration: none;
+    background-color: #10408c;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botonvolver:hover {
+    background-color: #325b9c;
+    transform: translateY(-3px);
+}
+
+/* ========== CONTENEDOR PRINCIPAL ========== */
+.ayuaaa {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== TÍTULOS ========== */
+h1 {
+    color: #132440;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+/* ========== DATA ========== */
+.DATA {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-left: 15px solid #10408c;
+    background-color: #C2E2FA;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.DATA:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateX(10px);
+}
+
+.DATA h2 {
+    color: #10408c;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.DATA p {
+    color: #000000;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.DATA ul, .DATA ol {
+    color: #000000;
+    line-height: 2;
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+.DATA li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    transition: 0.2s;
+}
+
+.DATA li:hover {
+    transform: translateX(5px);
+    color: #10408c;
+}
+
+/* ========== IMÁGENES ========== */
+.ayudaimagen {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.ayudaimagen:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+}
+
+/* ========== BADGE "EXTRA" ========== */
+.extra {
+    background-color: #ff9100;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/* ========== ESTILO PARA LOS ICONOS ========== */
+.icono {
+    font-size: 40px;
+    margin-right: 10px;
+}

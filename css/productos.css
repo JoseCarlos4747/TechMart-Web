@@ -1,0 +1,64 @@
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes st{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#encabezado{
+    background-color: #132440;
+    color: white;
+    padding: 2% 2% 2% 3%;
+}
+#encabezado h3{
+    margin: 0;
+}
+#e1{
+    margin: -2.5% 25%;
+    animation: st 1s;
+}
+#e1 ul li{
+    display: inline;
+    background-color: #10408c;
+    padding: .9% 2%;
+    border-radius: 15rem;
+}
+#e1 ul li a{
+    color: white;
+    text-decoration: none;
+}
+#e1 ul li:hover{
+    background-color: #325b9c;
+}
+#e2{
+    margin: -2.5% 0% 0% 75% ;
+    animation: st 1s;
+}
+#e2 ul li{
+    display: inline;
+    background-color: #10408c;
+    padding: 2% 3%;
+    border-radius: 15rem;
+}
+#e2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+#e2 ul li:hover{
+    background-color: #325b9c;
+}
+/**********************************/
+.menu-boton{
+    margin: 2%;
+    cursor: pointer;
+}
+.nav-links.active{
+    transform: translateY(0);/*aparezca el menu*/
+    opacity: 1;
+    pointer-events: auto;
+}
+.nav-links{
+    transform: translateY(-1990px);
+    transition: transform 0.4s, opacity 0.4s;
+}
