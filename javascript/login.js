@@ -26,7 +26,7 @@ formulario.onsubmit = function() {
         return false;
     }
     
-// ================ Validar que la contraseña tenga al menos 6 caracteres ================
+// ================ Validar que la contraseña tenga al menos 8 caracteres ================
     if (password.length < 8) {
         mensaje.style.color = '#d32f2f';
         mensaje.textContent = 'La contraseña debe tener mínimo 8 caracteres';
@@ -46,5 +46,5 @@ formulario.onsubmit = function() {
         window.location.href = '../html/productos.html';
     }, 1000);
     
-    return false; // Evita que recargue la página
+    return false; 
 };
